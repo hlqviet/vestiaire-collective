@@ -13,11 +13,9 @@ export const timeAgo = (date: string | number | Date) => {
   let seconds = Math.floor(
     (new Date().valueOf() - new Date(date).valueOf()) / 1000
   )
+  const unitSecondPair = Object.entries(Unit) as [keyof typeof Unit, number][]
 
-  for (const [unit, unitSeconds] of Object.entries(Unit) as [
-    keyof typeof Unit,
-    number
-  ][]) {
+  for (const [unit, unitSeconds] of unitSecondPair) {
     if (unit === 'Second') continue
 
     let interval = seconds / unitSeconds
