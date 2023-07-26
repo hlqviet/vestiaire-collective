@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import LouisVuitton from '@/components/LouisVuitton'
 
 const Problem1 = () => {
   return (
@@ -8,6 +9,7 @@ const Problem1 = () => {
         our website, could you reverse the name of the brand for each LV product
         to obfuscate their name?
       </p>
+      <LouisVuitton />
     </Container>
   )
 }
