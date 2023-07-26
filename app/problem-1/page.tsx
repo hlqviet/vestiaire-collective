@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import OffWhitePromotion from '@/components/OffWhitePromotion'
 
 const Problem1 = () => {
   return (
@@ -7,6 +8,7 @@ const Problem1 = () => {
         User is coming from an Off-White promotion offer link, display only the
         Off-White&apos;s products with a reduced price of 10%.
       </p>
+      <OffWhitePromotion />
     </Container>
   )
 }
