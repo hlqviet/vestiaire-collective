@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import UKProducts from '@/components/UKProducts'
 
 const Problem1 = () => {
   return (
@@ -8,6 +9,7 @@ const Problem1 = () => {
         500€, ordered from the cheaper to the most expensive that are shippable
         to my country.
       </p>
+      <UKProducts />
     </Container>
   )
 }
